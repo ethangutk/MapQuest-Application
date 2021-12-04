@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+    Ethan Gutknecht's Portfolio's Home Page
+    Copyright 2021 (C) Ethan Gutknecht
+-->
+<html lang="en">
+
+<head>
+    <title>History</title>
+
+    <!-- Import Local CSS and Bootstrap -->
+    <link rel="stylesheet" href="search-history.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Import JQuery and Javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="search-history.js"></script>
+</head>
+
+<body style="background-color: #262626;">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarLinks">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link h2" href="../Landing%20Page/index.html">Home</a>
+                <a class="nav-item nav-link h2" href="../Directions/index.html">Get Directions</a>
+                <a class="nav-item nav-link active h2" href="../Search-History/index.html">Query History</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- START OF THE FORM FOR THE STARTING POINT -->
+    <form>
+        <div class="bgGradient">
+            <div class="container requestContainer">
+                <div class="row">
+                    <div class="col-lg m-2">
+                        <p class="h1 text-dark text-center">Get Request History:</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <!-- START OF THE FORM - STARTING POINT -->
+                        <div class="form-group m-1">
+                            <label for="dateDay">Day</label>
+                            <input type="number" class="form-control" id="dateDay" value="1" min="1" max="31">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group m-1">
+                            <label for="dateMonth">Month</label>
+                            <select class="form-control" id="dateMonth">
+                              <option value="1" selected>January</option>
+                              <option value="2">February</option>
+                              <option value="3">March</option>
+                              <option value="4">April</option>
+                              <option value="5">May</option>
+                              <option value="6">June</option>
+                              <option value="7">July</option>
+                              <option value="8">August</option>
+                              <option value="9">September</option>
+                              <option value="10">October</option>
+                              <option value="11">November</option>
+                              <option value="12">December</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group m-1">
+                            <label for="dateYear">Year</label>
+                            <input type="number" class="form-control" id="dateYear" value="2021"  min="2010" max="2100">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group m-1">
+                            <label for="maxLines">Max Lines</label>
+                            <select class="form-control" id="maxLines">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                              <option>10</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-lg btn-danger p-3 m-3" onclick="getHistory()"><b>Get Old Requests</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Display Directions -->
+    <div class="container" id="historyResults">
+        <table class="table table-light table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Date and Time</th>
+                    <th scope="col">From</th>
+                    <th scope="col">To</th>
+                    <th scope="col">Number Of Maneuvers</th>
+                    <th scope="col">  </th>
+                </tr>
+            </thead>
+            <tbody id="historyBody">
+                <tr>
+                    <td>31-01-2021</td>
+                    <td>Clarendon%20Blvd,Arlington,VA</td>
+                    <td>2400+S+Glebe+Rd,+Arlington,+VA</td>
+                    <td>36</td>
+                    <td>More Info</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <br>
+    
+    <!-- Display specific Entry-->
+    <div class="container" id="entryResults">
+        <p class="h2 text-light text-center">Details</p><br>
+        <table class="table table-light table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">  </th>
+                    <th scope="col">Narrative</th>
+                    <th scope="col">Distance</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Thumbnail of Map</th>
+                </tr>
+            </thead>
+            <tbody id="historyBody">
+                <tr>
+                    <td>1</td>
+                    <td>Turn left onto High Street</td>
+                    <td>1.1 miles</td>
+                    <td>23 hr 59 min</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+    <footer>
+        <br>
+        <br>
+        <p class="text-light text-center">Copyright © Ethan Gutknecht 2021</p>
+        <br>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

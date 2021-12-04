@@ -1,0 +1,15 @@
+.requestContainer {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#navBar {
+    padding-left: 50px;
+}
+
+.bgGradient {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgba(255, 80, 80, 0.5), rgba(5, 50, 255, 0));
+}
