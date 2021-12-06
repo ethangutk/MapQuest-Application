@@ -63,7 +63,7 @@ function getDirections() {
                     "&size=225,160&key=cAzBiEf9vHr1SlAlOlnNei9kXnYK3a48";
             }
 
-            mapUrl = "<img src='" + mapUrl + "&type=dark" + "' class='rounded mx-auto d-block border border-primary'>";
+            mapUrl = "<img src='" + mapUrl + "&type=dark&declutter=true" + "' class='rounded mx-auto d-block border border-primary'>";
 
             // Append table
             $("#directionsBody").append("<tr><td class='align-middle'><b>" + (i + 1) + "</b></td>" +
@@ -109,10 +109,10 @@ function getDirections() {
             newObject = {
                 narr: data.route.legs[0].maneuvers[i].narrative,
                 dist: data.route.legs[0].maneuvers[i].distance,
-                time: data.route.legs[0].maneuvers[i].time,
-                mapT: data.route.legs[0].maneuvers[i].mapUrl
+                time: getFormattedTime(data.route.legs[0].maneuvers[i].time)
+                // mapT: data.route.legs[0].maneuvers[i].mapUrl
             }
-            // resultObject.results[i] = newObject;
+            resultObject.results[i] = newObject;
         }
 
         let databaseLink = "http://gutkneet.aws.csi.miamioh.edu/final.php?method=setLookup&tolocation=" +

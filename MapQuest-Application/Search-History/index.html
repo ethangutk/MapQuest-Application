@@ -87,7 +87,7 @@
                               <option>7</option>
                               <option>8</option>
                               <option>9</option>
-                              <option>10</option>
+                              <option selected>10</option>
                             </select>
                         </div>
                     </div>
@@ -103,7 +103,12 @@
             </div>
         </div>
     </form>
-
+    
+    <div id="noresults">
+        <p class="h1 text-center text-white">No Results</p>
+        <p class="h5 text-center text-white">Make sure your date is correct!</p>
+    </div>
+    
     <!-- Display Directions -->
     <div class="container" id="historyResults">
         <table class="table table-light table-striped">
@@ -140,16 +145,14 @@
                     <th scope="col">Narrative</th>
                     <th scope="col">Distance</th>
                     <th scope="col">Time</th>
-                    <th scope="col">Thumbnail of Map</th>
                 </tr>
             </thead>
-            <tbody id="historyBody">
+            <tbody id="detailsBody">
                 <tr>
                     <td>1</td>
                     <td>Turn left onto High Street</td>
                     <td>1.1 miles</td>
                     <td>23 hr 59 min</td>
-                    <td></td>
                 </tr>
             </tbody>
         </table>

@@ -10,6 +10,7 @@ var listOfLatAndLong = "";
 $(document).ready(function() {
     $("#historyResults").hide();
     $("#entryResults").hide();
+    $("#noresults").hide();
 })
 
 
@@ -24,7 +25,12 @@ function getHistory() {
     let requestURL = "http://gutkneet.aws.csi.miamioh.edu/final.php?method=getLookup&date=" + 
         $("#dateYear").val() + "-" + 
         $("#dateMonth").val() + "-" + day;
-
+    
+    // Hide the divs
+    $("#entryResults").hide();
+    $("#historyResults").hide();
+    $("#noresults").hide();
+    
     // Call local database
     a=$.ajax({
         url: requestURL,
@@ -34,8 +40,7 @@ function getHistory() {
         if (loopIteration > $("#maxLines").val()) {
             loopIteration = $("#maxLines").val();
         }
-        
-        console.log(JSON.stringify(data));
+
         $("#historyBody").html("");
         
         for (i = 0; i < loopIteration; i++) {
@@ -43,10 +48,15 @@ function getHistory() {
             "<td class='align-middle'>" + data.result[i].FROMlocation + "</td>" +
             "<td class='align-middle'>" + data.result[i].TOlocation + "</td>" +
             "<td class='align-middle'>" + data.result[i].numManeuvers + "</td>" +
-            "<td class='align-middle'>" + "More Info" + "</td></tr>");
+            "<td class='align-middle'><button type='button' class='btn btn-lg btn-primary'" +
+            " onclick='getDetails(" + data.result[i].resultObject + ")'>More Info</button></td></tr>");
+        }                           // This code above will remove all quotes from a string
+        // IF there are any results print them.
+        if (loopIteration > 0) {
+            $("#historyResults").show();
+        } else {
+            $("#noresults").show();
         }
-        
-        $("#historyResults").show();
         
         
     }).fail(function (error) {
@@ -55,6 +65,27 @@ function getHistory() {
     });
 }
 
-function getDetails(jsonObject) {
+function getDetails(obj) {
+    $("#detailsBody").html("");
+    $("#entryResults").hide();
+
+    for (i = 0; i < obj.results.length; i++) {
+        let narr = obj.results[i].narr;
+        let dist = obj.results[i].dist;
+        let time = obj.results[i].time;
+        
+        $("#detailsBody").append("<tr><td class='align-middle'>" + (i + 1) + "</td>" +
+            "<td class='align-middle'>" + narr + "</td>" +
+            "<td class='align-middle'>" + dist + " miles </td>" +
+            "<td class='align-middle'>" + time + "</td></tr>");
+    }
     
+    if (obj.results.length > 0) {
+        $("#entryResults").show();
+    }
 }
+
+
+
+
+
