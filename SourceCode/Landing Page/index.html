@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+    Ethan Gutknecht's Portfolio's Home Page
+    Copyright 2021 (C) Ethan Gutknecht
+-->
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="landingPage.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body style="background-color: #262626;">
+        <div id="intro">
+            <div id="innerIntro">
+                <h1 class="introHeader">MapQuest Application</h1>
+                <br>
+                <h5 class="introSubHeader">Created By Ethan Gutknecht</h5>
+            </div>
+            
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active h2" href="../Landing%2520Page/index.html"> Home </a>
+                    <a class="nav-item nav-link h2" href="../Directions/index.html"> Get Directions </a>
+                    <a class="nav-item nav-link h2" href="../Search-History/index.html"> Query History </a>
+                </div>
+            </div>
+        </nav>
+        
+        <br>
+        <br>
+        <br>
+        <div class="container" id="mainContainer">
+            <!-- Header about the application -->
+            <div class="row">
+                <div class="col">
+                    <p class="h1 text-light">About The Application</p>
+                </div>
+            </div>
+            <!-- Cards about the application -->
+            <div class="row">
+                <div class="col-lg d-flex align-items-center d-flex justify-content-center">
+                    <div class="card text-dark bg-light m-3 mw-50">
+                        <div class="card-header text-center">Directions</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Information</h5>
+                            <p class="card-text">On this page, you can input a start and end destination (within the United States) and get the directions between those two points!</p>
+                            <h5 class="card-title">The API</h5>
+                            <p class="card-text">We used many different APIs within this web application. All of the APIs came from MapQuest's developer page. The first one we used gets the directions from point A to point B. The object that it returns is full of data that this application will use to display the maneuvers for the user. The data included; latitude, longitude, the distance between movements, street names, street signs, and more.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg d-flex d-flex justify-content-center">
+                    <div class="card text-dark bg-light m-3">
+                        <div class="card-header text-center">History and Searching</div>
+                        <div class="card-body">
+                                <h5 class="card-title">Information</h5>
+                                <p class="card-text">This page will save every record that has been queried onto this website. In addition, it will return the data that was within this query and the date of when the user queried it.</p>
+                                <h5 class="card-title">Database</h5>
+                                <p class="card-text">We used a program within this application to use PHP to save data from user queries. The program is called phpLite and was installed before developing this application.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            
+            <!-- About The Class -->
+            <div class="row">
+                <div class="col">
+                    <p class="h1 text-light">About The Class</p>
+                </div>
+            </div>
+            <!-- Cards about the application -->
+            <div class="row">
+                <div class="col-sm d-flex align-items-center d-flex justify-content-center">
+                    <div class="card text-dark bg-light m-3 mw-50">
+                        <div class="card-header text-center">CSE383 - Web Application Programming</div>
+                        <div class="card-body">
+                                <p class="card-text">CSE383 was a course I took my Junior year of college. The course consisted of creating full stack web applications (like this one) from the ground up. We dabbled into HTML, PHP, CSS, Bootstrap, and AWS services. Combining all of those things together allowed me to learn what goes into creating websites that we use every day!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cards about the application -->
+            <div class="row">
+                <div class="col-sm d-flex align-items-center d-flex justify-content-center">
+                    <div class="card text-dark bg-light m-3 mw-50">
+                        <div class="card-header text-center">MapQuest Application</div>
+                        <div class="card-body">
+                                <p class="card-text">This project was my final project within the class. The project will show off all the skills I acquired over the 15-week course—everything from bootstrap to working with AWS. More specifically, we are using MapQuest's API to get directions for this website to display. There will also be another feature that will allow us to tap into a database and see every query sent to MapQuest using our application.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <footer>
+                <p class="text-light text-center">Copyright ©  Ethan Gutknecht 2021</p>
+            </footer>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+

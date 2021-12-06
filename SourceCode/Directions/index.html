@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--
+    Ethan Gutknecht's Portfolio's Home Page
+    Copyright 2021 (C) Ethan Gutknecht
+-->
+<html lang="en">
+
+<head>
+    <title>Directions</title>
+
+    <!-- Import Local CSS and Bootstrap -->
+    <link rel="stylesheet" href="directions.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Import JQuery and Javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="directions.js?rev=1"></script>
+</head>
+
+<body style="background-color: #262626;">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarLinks">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link h2" href="../Landing%20Page/index.html">Home</a>
+                <a class="nav-item nav-link active h2" href="../Directions/index.html">Get Directions</a>
+                <a class="nav-item nav-link h2" href="../Search-History/index.html">Query History</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- START OF THE FORM FOR THE STARTING POINT -->
+    <form>
+        <div class="bgGradient">
+            <div class="container requestContainer">
+                <p class="h1 text-dark text-center">Get Directions:</p><br>
+                <div class="row">
+
+
+                    <div class="col-lg m-2">
+                        <p class="h3 text-center"><b>Starting Point:</b></p>
+                        <!-- START OF THE FORM - STARTING POINT -->
+                        <div class="form-group m-1">
+                            <label for="startStreet">Street Address</label>
+                            <input type="text" class="form-control" id="startStreet" placeholder="123 Oak Street">
+                        </div>
+                        <div class="form-group m-1">
+                            <label for="startCity">City</label>
+                            <input pattern="[A-Za-z]" type="text" class="form-control" id="startCity" placeholder="Oxford">
+                        </div>
+                        <div class="form-group m-1">
+                            <label for="startState">State</label>
+                            <select class="form-control" id="startState">
+                                <option value="AL" selected>Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg m-2">
+                        <p class="h3 text-center"><b>Ending Destination:</b></p>
+                        <!-- START OF THE FORM - STARTING POINT -->
+                        <div class="form-group m-1">
+                            <label for="endStreet">Street Address</label>
+                            <input type="text" class="form-control" id="endStreet" placeholder="321 Maple Road">
+                        </div>
+                        <div class="form-group m-1">
+                            <label for="endCity">City</label>
+                            <input type="text" class="form-control" id="endCity" placeholder="Hamilton">
+                        </div>
+                        <div class="form-group m-1">
+                            <label for="endState">State</label>
+                            <select class="form-control" id="endState">
+                                <option value="AL" selected>Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-lg btn-primary p-3 m-3" onclick="getDirections()"> Get Directions </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Display Directions -->
+    <div class="container" id="yourDirections">
+        <p class="h1 text-light text-center">Your Directions:</p>
+        <p class="h5 text-light text-center" id="totalTime">Total Time: -- hr -- min </p>
+        <p class="h5 text-light text-center" id="totalDistance">Total Distance: --- miles</p><br>
+        <table class="table table-light table-striped">
+            <thead>
+                <tr>
+                    <th scope="col"> </th>
+                    <th scope="col"> </th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Distance</th>
+                    <th scope="col">Direction</th>
+                    <th scope="col">Map</th>
+                </tr>
+            </thead>
+            <tbody id="directionsBody">
+                <tr>
+                    <th scope="row">1</th>
+                    <td><img src="http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif"></td>
+                    <td> 3 min </td>
+                    <td>0.03 Miles</td>
+                    <td>Make a left turn onto high street</td>
+                    <td><img src="https://via.placeholder.com/225x160"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Display Elevation Chart -->
+    <div class="container" id="elevationChartandMap">
+
+        <div class="row">
+            <div class="col-md">
+                <p class="h1 text-light text-center">Map:</p><br>
+                <div id="mapImage">
+                    <img src="https://via.placeholder.com/400x300" class="rounded mx-auto d-block" alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-md">
+                <p class="h1 text-light text-center">Elevation Chart:</p><br>
+                <div id="chartImage">
+                    <img src="https://via.placeholder.com/400x300" class="rounded mx-auto d-block" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <footer>
+        <br>
+        <br>
+        <p class="text-light text-center">Copyright © Ethan Gutknecht 2021</p>
+        <br>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body></html>
