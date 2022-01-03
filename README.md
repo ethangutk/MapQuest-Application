@@ -24,16 +24,22 @@
 
 ## 🎓 About The Class
 #### CSE383 - Web Application Development
-I took this during my junior year of college in the fall of 2021. This class explored all of the ideas that…
+I took this during my junior year of college in the fall of 2021. This 15-week course went over 15 different topics and explored all of the fundamental ideas of a web application—everything from HTML, CSS, JavaScript, EC2 instances, PHP, and more. The course allowed me to dive headfirst into what web development is. Late in the class is when all the topics started to come together. After that, we started applying everything we knew and made a new web application every week.
 
 
 <br><br><br>
-## ℹ About The Project
-
+## ℹ About The Application
+This project that I’m featuring here was my final project for the course. We had to make a great-looking web application using everything that we learned up to the end of the class. The class took an extensive amount of time out of my final weeks of the semester, but I am pleased with how it turned out. Overall, I ended up getting a 95% on the project and missing some points for the style of my website. Everything about this project I can successfully say describes my knowledge in this area within computer science; I very much enjoyed developing this.
 
 <br><br><br>
 ## 🛣 The Features Of The Web Application
 ### 🚌 MapQuest’s API
+<b>APIs Used:</b>
+<ul>
+	<li><a href="https://developer.mapquest.com/documentation/directions-api/route/get/">MapQuest’s Directions API</a></li>
+<li><a href="https://developer.mapquest.com/documentation/open/elevation-api/elevation-chart/get/">MapQuest’s Open Elevation API</a></li>
+</ul>
+<b>I can say pretty proudly that I love working with APIs</b>. I have worked with APIs in only two classes at Miami University, but they take a front-end application to an amazing new level. In this API that we used, mapquest provided us with some great data to work with and integrate into our web application. I’ll give you the rundown. The user can input two different addresses on a form. Those addresses will query two different APIs. One of the APIs gets a JSON object of the directions between the two addresses, and the other gets an elevation change between the directions. Honestly, this stuff is pretty cool.
 <br><br>
 
 ### 🚂 Bootstrap and CSS
@@ -78,8 +84,3 @@ I took this during my junior year of college in the fall of 2021. This class exp
 <p align="center">
   Copyright © Ethan Gutknecht 2021
 </p>
-
-
-
-
-
