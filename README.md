@@ -90,7 +90,8 @@ As you can see by this result, one request showed up. You can see the details of
 
 <br><br>
 ![](https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/SearchPage4.png?raw=true)
-<br><br>
+
+<br><br><br><br>
 
 - - - -
 
