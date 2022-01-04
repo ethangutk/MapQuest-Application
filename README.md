@@ -8,7 +8,7 @@
 	<tr>
 		<td>
 			<a href="https://github.com/ethangutknecht/MapQuest-Application#-about-the-class">🎓  About The Class</a><br><br>
-			<a href="https://github.com/ethangutknecht/MapQuest-Application#%E2%84%B9-about-the-project">ℹ About The Project</a><br><br>
+			<a href="https://github.com/ethangutknecht/MapQuest-Application#%E2%84%B9-about-the-application">ℹ About The Application</a><br><br>
 			<a href="https://github.com/ethangutknecht/MapQuest-Application#-the-features-of-the-web-application">🛣 The Features Of The Web Application</a>
 			<ul>
 				<li><a href="https://github.com/ethangutknecht/MapQuest-Application#-mapquests-api">🚌 MapQuest’s API</a></li>
@@ -128,7 +128,4 @@ As you can see by this result, one request showed up. You can see the details of
 <p align="center">
   Copyright © Ethan Gutknecht 2021
 </p>
-
-
-
 
