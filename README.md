@@ -119,10 +119,19 @@ As you can see by this result, one request showed up. You can see the details of
 	<br><br>
 	<img src="https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/Final4.png?raw=true">
 </p>
-<br>
-
 
 <br><br><br>
+
+- - - -
+<p align="center">
+	<a align="center" href="https://github.com/ethangutknecht/MapQuest-Application">⬆ Back To The Top </a>
+</p>
+
+- - - -
+
+<p align="center">
+	<a href="https://github.com/ethangutknecht">↩ Back To Ethan Gutknecht's Profile</a>
+</p>
 
 - - - -
 
@@ -130,3 +139,5 @@ As you can see by this result, one request showed up. You can see the details of
   Copyright © Ethan Gutknecht 2021
 </p>
 
+	
+	
