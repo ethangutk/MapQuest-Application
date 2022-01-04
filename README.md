@@ -11,11 +11,11 @@
 			<a href="https://github.com/ethangutknecht/MapQuest-Application#%E2%84%B9-about-the-project">ℹ About The Project</a><br><br>
 			<a href="https://github.com/ethangutknecht/MapQuest-Application#-the-features-of-the-web-application">🛣 The Features Of The Web Application</a>
 			<ul>
-        <li><a href="https://github.com/ethangutknecht/MapQuest-Application#-mapquests-api">🚌 MapQuest’s API</a></li>
-        <li><a href="https://github.com/ethangutknecht/MapQuest-Application#-bootstrap-and-css">🚂 Bootstrap and CSS</a></li>
-        <li><a href="https://github.com/ethangutknecht/MapQuest-Application#-html5">🚕 HTML</a></li>
-        <li><a href="https://github.com/ethangutknecht/MapQuest-Application#-ajax-and-jquery">✈ AJAX and JQuery</a></li>
-        <li><a href="https://github.com/ethangutknecht/MapQuest-Application#-sql-lite-and-php-lite">🚢 SQL-Lite and PHP-Lite</a></li>
+				<li><a href="https://github.com/ethangutknecht/MapQuest-Application#-mapquests-api">🚌 MapQuest’s API</a></li>
+				<li><a href="https://github.com/ethangutknecht/MapQuest-Application#-html5">🚕 HTML5</a></li>
+				<li><a href="https://github.com/ethangutknecht/MapQuest-Application#-bootstrap-and-css">🚂 Bootstrap and CSS</a></li>
+				<li><a href="https://github.com/ethangutknecht/MapQuest-Application#-ajax-and-jquery">✈ AJAX and JQuery</a></li>
+				<li><a href="https://github.com/ethangutknecht/MapQuest-Application#-sql-lite-and-php-lite">🚢 SQL-Lite and PHP-Lite</a></li>
 			</ul>
 			<a href="https://github.com/ethangutknecht/MapQuest-Application#-the-full-web-application">🏁 The Full Web Application</a><br><br>
 		</td>
