@@ -124,7 +124,7 @@ As you can see by this result, one request showed up. You can see the details of
 
 - - - -
 <p align="center">
-	<a align="center" href="https://github.com/ethangutknecht/MapQuest-Application">⬆ Back To The Top </a>
+	<a align="center" href="https://github.com/ethangutknecht/MapQuest-Application#-mapquest-application">⬆ Back To The Top </a>
 </p>
 
 - - - -
@@ -139,5 +139,5 @@ As you can see by this result, one request showed up. You can see the details of
   Copyright © Ethan Gutknecht 2021
 </p>
 
-	
-	
+
+
