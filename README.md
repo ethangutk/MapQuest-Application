@@ -1,3 +1,7 @@
+<h6 >
+	<a href="https://github.com/ethangutknecht">↩ Back To Ethan Gutknecht's Profile</a>
+</h6>
+
 <h1 align="center">🗺 MapQuest Application</h1><br>
 <table align="center">
 	<tr>
@@ -41,7 +45,7 @@ This project that I’m featuring here was my final project for the course. We h
 </ul>
 <b>I can say pretty proudly that I love working with APIs</b>. I have worked with APIs in only two classes at Miami University, but they take a front-end application to an amazing new level. In this API that we used, mapquest provided us with some great data to work with and integrate into our web application. I’ll give you the rundown. The user can input two different addresses on a form. Those addresses will query two different APIs. One of the APIs gets a JSON object of the directions between the two addresses, and the other gets an elevation change between the directions. Honestly, this stuff is pretty cool.<br><br>
 
-Now let’s get into the specifics. I presented the user with a form that they could fill out. The form has three different fields allowing the user to input a street address, city, and state. The state is a drop-down box of all 50 states to prevent errors when calling the API. Simple as that.<br><br>
+Now let’s get into the specifics. I presented the user with a form that they could fill out. It has three different fields allowing the user to input a street address, city, and state. The state is a drop-down box of all 50 states to prevent errors when calling the API.<br><br>
 
 ![](https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/DirectionsPage1.png?raw=true)
 
@@ -123,21 +127,19 @@ As you can see by this result, one request showed up. You can see the details of
 <br><br><br>
 
 - - - -
-<p align="center">
+<h6 align="center">
 	<a align="center" href="https://github.com/ethangutknecht/MapQuest-Application#-mapquest-application">⬆ Back To The Top </a>
-</p>
+</h6>
 
 - - - -
 
-<p align="center">
+<h6 align="center">
 	<a href="https://github.com/ethangutknecht">↩ Back To Ethan Gutknecht's Profile</a>
-</p>
+</h6>
 
 - - - -
 
-<p align="center">
-  Copyright © Ethan Gutknecht 2021
-</p>
-
-
+<h6 align="center">
+  Copyright © Ethan Gutknecht 2022
+</h6>
 
