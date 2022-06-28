@@ -80,7 +80,7 @@ I never worked with Bootstrap or anything close to it before this class. I found
 <br><br>
 
 ### ✈ AJAX and JQuery
-Ah, the cool stuff. This stuff was interesting to work with, especially since it was the first time I was introduced to it. I used AJAX to get the JSON objects from the API calls. If MapQuest blew up, I had to code in a fail function, but most work is done elegantly. When applying the JSON object’s data to the web page, I used JQuery because it is easier than standard javascript. I like that JQuery uses CSS selector magic and has pretty good error handling rather than doing it the old-fashioned way.
+Ah, the cool stuff. This stuff was interesting to work with, especially since it was the first time I was introduced to it. I used AJAX to get the JSON objects from the API calls. If MapQuest blew up, I had to code in a fail function, but most work is done elegantly. When applying the JSON object’s data to the web page, I used JQuery because it is easier than standard javascript. I like that JQuery uses CSS selector magic and has good error handling rather than doing it the old-fashioned way.
 <br><br>
 
 ### 🚢 SQL-Lite and PHP-Lite
