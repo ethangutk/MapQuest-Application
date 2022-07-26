@@ -48,7 +48,7 @@ This project that I’m featuring here was my final project. We had to make a gr
 	<li><a href="https://developer.mapquest.com/documentation/directions-api/route/get/">MapQuest’s Directions API</a></li>
 <li><a href="https://developer.mapquest.com/documentation/open/elevation-api/elevation-chart/get/">MapQuest’s Open Elevation API</a></li>
 </ul>
-<b>I can say pretty proudly that I love working with APIs</b>. I have worked with APIs in only two classes at Miami University, but they take a front-end application to an amazing new level. In this API that we used, mapquest provided us with some great data to work with and integrate into our web application. I’ll give you the rundown. The user can input two different addresses on a form. Those addresses will query two different APIs. One of the APIs gets a JSON object of the directions between the two addresses, and the other gets an elevation change between the directions. Honestly, this stuff is pretty cool.<br><br>
+<b>I can proudly say that I love working with APIs</b>. I have worked with APIs in only two classes at Miami University, but they take a front-end application to an amazing new level. In this API that we used, mapquest provided us with some great data to work with and integrate into our web application. I’ll give you the rundown. The user can input two different addresses on a form. Those addresses will query two different APIs. One API gets a JSON object of the directions between the two addresses, and the other gets an elevation change between the directions. Honestly, this stuff is pretty cool.<br><br>
 
 Now let’s get into the specifics. I presented the user with a form that they could fill out. It has three fields allowing the user to input a street address, city, and state. The state is a drop-down box of all 50 states to prevent errors when calling the API.<br><br>
 
@@ -92,7 +92,7 @@ These small, lightweight programs allowed me to expand my application further. I
 As you can see, the get requests button will access the SQL-Lite database of all the past requests. In addition, the results will be organized in order by the date of the request.
 
 <br><br>
-![](https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/SearchPage3.png?raw=true)
+![https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/SearchPage3.png?raw=true]()
 <br><br>
 
 As you can see by this result, one request showed up. You can see the details of that request by clicking the more info button. The details will display every maneuver that the directions page initially displayed on the screen of the original person that searched for it.
