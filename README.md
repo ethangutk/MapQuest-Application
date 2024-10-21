@@ -1,5 +1,5 @@
 <h6 >
-	<a href="https://github.com/ethangtkt">↩ Back To Ethan Gutknecht's Profile</a>
+	<a href="https://github.com/ethangtkt">↩ Back To ethangtkt's Profile</a>
 </h6>
 
 <h1 align="center">🗺 MapQuest Application</h1><br>
@@ -133,18 +133,18 @@ As you can see by this result, one request showed up. You can see the details of
 
 - - - -
 <h6 align="center">
-	<a align="center" href="#-back-to-ethan-gutknechts-profile">⬆ Back To The Top </a>
+	<a align="center" href="#-back-to-ethangtkts-profile">⬆ Back To The Top </a>
 </h6>
 
 - - - -
 
 <h6 align="center">
-	<a href="https://github.com/ethangtkt">↩ Back To Ethan Gutknecht's Profile</a>
+	<a href="https://github.com/ethangtkt">↩ Back To ethangtkt's Profile</a>
 </h6>
 
 - - - -
 
 <h6 align="center">
-  Copyright © Ethan Gutknecht 2022
+  Copyright © ethangtkt 2022
 </h6>
 
