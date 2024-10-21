@@ -1,5 +1,5 @@
 <h6 >
-	<a href="https://github.com/ethangutknecht">↩ Back To Ethan Gutknecht's Profile</a>
+	<a href="https://github.com/ethangtkt">↩ Back To Ethan Gutknecht's Profile</a>
 </h6>
 
 <h1 align="center">🗺 MapQuest Application</h1><br>
@@ -26,7 +26,7 @@
   	</tr>
 	<tr>
 		<td align="center">
-			<a href="https://vscode.dev/github.com/ethangutknecht/MapQuest-Application">🔍 Explore the source code directly in<br>the browser using VSCode!</a>
+			<a href="https://vscode.dev/github.com/ethangtkt/MapQuest-Application">🔍 Explore the source code directly in<br>the browser using VSCode!</a>
 		</td>
 	</tr>
 </table><br>
@@ -52,19 +52,19 @@ This project that I’m featuring here was my final project. We had to make a gr
 
 Now let’s get into the specifics. I presented the user with a form that they could fill out. It has three fields allowing the user to input a street address, city, and state. The state is a drop-down box of all 50 states to prevent errors when calling the API.<br><br>
 
-![](https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/DirectionsPage1.png?raw=true)
+![](https://github.com/ethangtkt/MapQuest-Application/blob/main/Images/DirectionsPage1.png?raw=true)
 
 <br><br>
 When you press "Get Directions,” 90% of the program’s code works in the background. Let's break it down. First, it takes the six input fields the user decided on and turns them into an API call to MapQuest. An example API call <a href="http://www.mapquestapi.com/directions/v2/route?key=cAzBiEf9vHr1SlAlOlnNei9kXnYK3a48&from=Clarendon%20Blvd,Arlington,VA&to=2400+S+Glebe+Rd,+Arlington,+VA">might look something like this.</a> This is a JSON object. In simple terms, think of it as asking MapQuest to reach into their filing cabinet for specific information, and they give it to us as a JSON file. Yes, unformatted looks very scary, but this holds all the data we need to put on our web page. This JSON object holds stuff like the street signs, are we entering a national park, how far until our next maneuver, their construction, etc. I won't get into my specific API call, but I modified it to look better on my web page, like making the maps dark grey rather than white. <br>
 
 Now that we have this object, we can look through and get the icon, distance, direction, map, and number for each maneuver the driver takes to get to their destination. We are appending it to a table in HTML as we are doing this. Once finished with each maneuver, we display the total distance and time at the top of the page.<br><br>
 
-![](https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/DirectionsPage3.png?raw=true)
+![](https://github.com/ethangtkt/MapQuest-Application/blob/main/Images/DirectionsPage3.png?raw=true)
 
 <br><br>
 At the bottom of the page, we display two more things. An overall map view between your destination and starting location is one of those things. This map required another API call using the same information the user initially gave us. The second thing we display is an elevation chart between each maneuver. This chart collects all of the latitudes and longitudes of each maneuver. It will take the latitudes and longitudes and call the above elevation chart API. This API, unfortunately, has a limit on how many inputs you can test. You can't get an elevation chart from New York to Los Angelos due to the limits on the API itself. <br><br>
 
-![](https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/DirectionsPage4.png?raw=true)
+![](https://github.com/ethangtkt/MapQuest-Application/blob/main/Images/DirectionsPage4.png?raw=true)
 <br><br>
 
 
@@ -76,7 +76,7 @@ As any developer would create any webpage, I used HTML5 when developing this. Th
 ### 🚂 Bootstrap and CSS
 I never worked with Bootstrap or anything close to it before this class. I found how powerful and fast the tool is when creating a responsive, professional webpage. Bootstrap is what ties the whole application together. It allows my webpage to be responsive and collapse very quickly. An example is when I used the form from the directions page. As I shrink the web page, we see that the side-by-side form turns into one on top of the other form. Along with this, the top menu turns into a “hamburger,” where you can expand it by clicking it rather than the whole thing displayed.<br><br>
 
-![](https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/DirectionsPage2.png?raw=true)
+![](https://github.com/ethangtkt/MapQuest-Application/blob/main/Images/DirectionsPage2.png?raw=true)
 <br><br>
 
 ### ✈ AJAX and JQuery
@@ -86,19 +86,19 @@ Ah, the cool stuff. This stuff was interesting to work with, especially since it
 ### 🚢 SQL-Lite and PHP-Lite
 These small, lightweight programs allowed me to expand my application further. I used SQL-lite to hold all of the previous directions for my application. When you go to the "History" page, you can see what people and yourself are searching. I created my API using PHP-Lite. I would save the directions as a JSON object in string form. These two features work great together when in action.<br><br>
 
-![](https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/SearchPage1.png?raw=true)
+![](https://github.com/ethangtkt/MapQuest-Application/blob/main/Images/SearchPage1.png?raw=true)
 <br><br>
 
 As you can see, the get requests button will access the SQL-Lite database of all the past requests. In addition, the results will be organized in order by the date of the request.
 
 <br><br>
-![https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/SearchPage3.png?raw=true]()
+![https://github.com/ethangtkt/MapQuest-Application/blob/main/Images/SearchPage3.png?raw=true]()
 <br><br>
 
 As you can see by this result, one request showed up. You can see the details of that request by clicking the more info button. The details will display every maneuver that the directions page initially displayed on the screen of the original person that searched for it.
 
 <br><br>
-![](https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/SearchPage4.png?raw=true)
+![](https://github.com/ethangtkt/MapQuest-Application/blob/main/Images/SearchPage4.png?raw=true)
 
 <br><br><br><br>
 
@@ -120,13 +120,13 @@ As you can see by this result, one request showed up. You can see the details of
 ## 🏁 The Full Web Application
 
 <p align="center">
-	<img src="https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/Final1.png?raw=true">
+	<img src="https://github.com/ethangtkt/MapQuest-Application/blob/main/Images/Final1.png?raw=true">
 	<br><br>
-	<img src="https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/Final2.png?raw=true">
+	<img src="https://github.com/ethangtkt/MapQuest-Application/blob/main/Images/Final2.png?raw=true">
 	<br><br>
-	<img src="https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/Final3.png?raw=true">
+	<img src="https://github.com/ethangtkt/MapQuest-Application/blob/main/Images/Final3.png?raw=true">
 	<br><br>
-	<img src="https://github.com/ethangutknecht/MapQuest-Application/blob/main/Images/Final4.png?raw=true">
+	<img src="https://github.com/ethangtkt/MapQuest-Application/blob/main/Images/Final4.png?raw=true">
 </p>
 
 <br><br><br>
@@ -139,7 +139,7 @@ As you can see by this result, one request showed up. You can see the details of
 - - - -
 
 <h6 align="center">
-	<a href="https://github.com/ethangutknecht">↩ Back To Ethan Gutknecht's Profile</a>
+	<a href="https://github.com/ethangtkt">↩ Back To Ethan Gutknecht's Profile</a>
 </h6>
 
 - - - -
